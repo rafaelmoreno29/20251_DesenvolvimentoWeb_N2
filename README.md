@@ -53,13 +53,16 @@ git push origin main
 ```
 ## 💡 Dicas Importantes
 ✔️ Sempre faça pull antes de começar a trabalhar no código para evitar conflitos.
+
 ✔️ Escreva mensagens de commit descritivas para facilitar o entendimento das mudanças.
+
 ✔️ Caso ocorra um conflito de merge, resolva manualmente e faça um novo commit antes de dar push.
 
 ## 📬 Contato
 Caso tenha dúvidas, entre em contato com o professor.
 
 🔗 GitHub: github.com/rafaelmoreno29
+
 ✉️ E-mail: rafael.moreno@facens.br
 
 # 🚀 Bons estudos e bom código! 🚀
