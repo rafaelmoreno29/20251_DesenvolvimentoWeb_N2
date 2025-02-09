@@ -65,4 +65,4 @@ Caso tenha dúvidas, entre em contato com o professor.
 
 ✉️ E-mail: rafael.moreno@facens.br
 
-** 🚀 Bons estudos e bom código! 🚀 **
+**🚀 Bons estudos e bom código! 🚀**
