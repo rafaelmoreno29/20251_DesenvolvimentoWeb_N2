@@ -2,7 +2,7 @@
 Bem-vindo(a) ao repositório da disciplina AS503TSN1 - Desenvolvimento Web Back-End! Aqui você encontrará materiais, códigos-fonte e instruções para acompanhar o curso de desenvolvimento back-end com Java Spring Boot.
 
 ## 📚 Ementa da Disciplina
-Nesta disciplina, você aprenderá a desenvolver aplicações web no lado do servidor utilizando Spring Boot. Vamos abordar desde conceitos básicos até práticas avançadas para criação de APIs escaláveis e seguras.
+A disciplina abrange os fundamentos do desenvolvimento back-end com foco em Java Spring Boot, incluindo a criação de APIs RESTful, aplicação de padrões arquiteturais e design patterns. Os alunos aprenderão a projetar e otimizar APIs RESTFul conectadas a bancos de dados SQL ou NoSQL, implementar autenticação e segurança e realizar deploy em produção, capacitando-os a desenvolver aplicações robustas, escaláveis e prontas para produção.
 
 ## 📌 Tópicos Principais:
 Introdução ao desenvolvimento web back-end
