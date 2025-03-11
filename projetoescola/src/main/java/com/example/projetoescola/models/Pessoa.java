@@ -2,35 +2,35 @@ package com.example.projetoescola.models;
 
 import java.util.List;
 
+import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.ManyToMany;
 
 @Entity
-public class CategoriaCurso {
+public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     private String nome;
-    @OneToMany(mappedBy = "categoriaCurso", fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "pessoas")
     private List<Curso> cursos;
 
-    public CategoriaCurso(Integer id, String nome) {
+    public Pessoa(Long id, String nome) {
         this.id = id;
         this.nome = nome;
     }
 
-    public CategoriaCurso() {
+    public Pessoa() {
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
