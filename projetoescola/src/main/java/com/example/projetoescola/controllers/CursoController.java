@@ -21,11 +21,11 @@ public class CursoController {
 
     @GetMapping()
     public List<Curso> getTodosCursos() {
-        return cursoRepository.obterTodos();
+        return cursoRepository.findAll();
     }
 
     @PostMapping()
     public Curso postCurso(@RequestBody Curso curso) {
-        return cursoRepository.salvar(curso);
+        return cursoRepository.save(curso);
     }
 }

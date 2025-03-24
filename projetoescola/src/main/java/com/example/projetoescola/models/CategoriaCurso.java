@@ -15,7 +15,7 @@ public class CategoriaCurso {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
-    @OneToMany(mappedBy = "categoriaCurso", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "categoriaCurso")
     private List<Curso> cursos;
 
     public CategoriaCurso(Integer id, String nome) {
