@@ -5,11 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class CursoDTO {
-    private Long id;
+public class CategoriaCursoDTO {
+    private Integer id;
     private String nome;
 }
