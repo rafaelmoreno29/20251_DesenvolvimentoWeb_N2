@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 
 import com.example.projetoescola.config.RegraNegocioException;
 import com.example.projetoescola.dto.CategoriaCursoDTO;
-import com.example.projetoescola.dto.CursoCompletoDTO;
 import com.example.projetoescola.dto.CursoDTO;
 import com.example.projetoescola.dto.CursoRequestDTO;
+import com.example.projetoescola.dto.DadosCursoDTO;
 import com.example.projetoescola.models.CategoriaCurso;
 import com.example.projetoescola.models.Curso;
 import com.example.projetoescola.repositories.CategoriaCursoRepository;
@@ -57,9 +57,9 @@ public class CursoServiceImpl implements CursoService {
     }
 
     @Override
-    public CursoCompletoDTO obterPorId(Long id) {
+    public DadosCursoDTO obterPorId(Long id) {
         return cursoRepository.findById(id).map((Curso c) -> {
-            return CursoCompletoDTO
+            return DadosCursoDTO
                     .builder()
                     .id(c.getId())
                     .nome(c.getNome())

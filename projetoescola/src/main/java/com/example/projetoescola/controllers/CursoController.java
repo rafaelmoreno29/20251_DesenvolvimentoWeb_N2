@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.projetoescola.dto.CursoCompletoDTO;
 import com.example.projetoescola.dto.CursoDTO;
 import com.example.projetoescola.dto.CursoRequestDTO;
+import com.example.projetoescola.dto.DadosCursoDTO;
 import com.example.projetoescola.models.Curso;
 import com.example.projetoescola.repositories.CursoRepository;
 import com.example.projetoescola.services.CursoService;
@@ -38,7 +38,7 @@ public class CursoController {
     }
 
     @GetMapping("{id}")
-    public CursoCompletoDTO obterPorId(@PathVariable Long id) {
+    public DadosCursoDTO obterPorId(@PathVariable Long id) {
         return cursoService.obterPorId(id);
     }
 

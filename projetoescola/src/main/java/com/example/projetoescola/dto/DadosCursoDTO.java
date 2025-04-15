@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CursoCompletoDTO {
+public class DadosCursoDTO {
     private Long id;
     private String nome;
     private Integer cargaHoraria;
