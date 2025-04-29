@@ -13,14 +13,18 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
 
 @Entity
 public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotEmpty(message = "O nome do curso não pode ser vazio")
     @Column(length = 200, nullable = false)
     private String nome;
+    @Min(value = 2000, message = "A carga horária deve ser maior ou igual a 2000")
     @Column(nullable = false)
     private Integer cargaHoraria;
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
